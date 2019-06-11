@@ -1,0 +1,22 @@
+.jumbotron {
+  background-image: url(.././assets/img/cooking.jpg);
+  height: 41em;
+  background-color: #fafcd6;
+  font-family: cursive;
+  background-repeat: space;
+}
+
+.jumbotron p {
+  font-size: 57px;
+}
+
+.box{
+  border-style: dashed;
+  padding: 1%;
+  width: 40%;
+  height: 600px;
+  text-align: center;
+  margin-left: 30%;
+  background-color: #fafcd6;
+  border-radius: 25px;
+}

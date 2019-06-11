@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="jumbotron">
+    <div class="container">
+      <p>
+        Welcome to {{ title }}!
+      </p><br><br>
+      <ul>
+      <li *ngFor= "let currentRecipe of recipes">{{currentRecipe.title}} :<button class="btn btn-warning" ng-model="myVar" (click)="selectRecipe(currentRecipe)">Show!</button><br><br></li>
+    </ul>
+    </div>
+  </div>
+
+</div>
+<div class="box" *ngIf="selectedRecipe">
+  <h3>{{selectedRecipe.title}}</h3>
+  <h3>ingredients:  {{selectedRecipe.ingredients.slice(0)}}</h3>
+  <h3>Directions:</h3>
+  <h3>{{selectedRecipe.directions.slice(0)}}</h3>
+
+</div>
